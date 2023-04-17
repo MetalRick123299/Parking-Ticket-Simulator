@@ -30,6 +30,16 @@ public class PoliceOfficer {
         this.badgeNumber = newBadgeNumber;
     }
 
+    public ParkingTicket writeParkingTicket(ParkingMeter meter, ParkedCar car) {
+        final int minutesOver = car.getMinutesParked() - meter.getMinutesPurchased();
+        final double fine = 100.00 + (Math.max(minutesOver, 0) * 0.10);
+        return new ParkingTicket(this, car, fine);
+    }
+
+    public boolean isParkedCarExpired(ParkingMeter meter, ParkedCar car) {
+        return car.getMinutesParked() > meter.getMinutesPurchased();
+    }
+
     public String toString() {
         return "String";
     }
