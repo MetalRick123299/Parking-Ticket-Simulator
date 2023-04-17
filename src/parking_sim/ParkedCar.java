@@ -7,7 +7,7 @@ public class ParkedCar {
     private String licenseNumber;
     private int minutesParked;
 
-    ParkedCar(ParkedCar obj) {
+    public ParkedCar(ParkedCar obj) {
         this.make = obj.make;
         this.model = obj.model;
         this.color = obj.color;
@@ -15,7 +15,7 @@ public class ParkedCar {
         this.minutesParked = obj.minutesParked;
     }
 
-    ParkedCar(String make, String model, String color, String licenseNumber, int minutesParked) {
+    public ParkedCar(String make, String model, String color, String licenseNumber, int minutesParked) {
         this.make = make;
         this.model = model;
         this.color = color;

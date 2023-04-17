@@ -5,13 +5,13 @@ public class ParkingTicket {
     private ParkedCar car;
     private double fine;
 
-    ParkingTicket(ParkingTicket obj) {
+    public ParkingTicket(ParkingTicket obj) {
         this.officer = obj.officer;
         this.car = obj.car;
         this.fine = obj.fine;
     }
 
-    ParkingTicket(PoliceOfficer officer, ParkedCar car, double fine) {
+    public ParkingTicket(PoliceOfficer officer, ParkedCar car, double fine) {
         this.officer = officer;
         this.car = car;
         this.fine = fine;

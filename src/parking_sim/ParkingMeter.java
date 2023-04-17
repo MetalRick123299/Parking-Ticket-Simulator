@@ -3,11 +3,11 @@ package parking_sim;
 public class ParkingMeter {
     private int minutesPurchased;
 
-    ParkingMeter(ParkingMeter obj) {
+    public ParkingMeter(ParkingMeter obj) {
         this.minutesPurchased = obj.minutesPurchased;
     }
 
-    ParkingMeter(int minutesPurchased) {
+    public ParkingMeter(int minutesPurchased) {
         this.minutesPurchased = minutesPurchased;
     }
 

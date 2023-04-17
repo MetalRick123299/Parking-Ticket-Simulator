@@ -4,12 +4,12 @@ public class PoliceOfficer {
     private String name;
     private String badgeNumber;
 
-    PoliceOfficer(PoliceOfficer obj) {
+    public PoliceOfficer(PoliceOfficer obj) {
         this.name = obj.name;
         this.badgeNumber = obj.badgeNumber;
     }
 
-    PoliceOfficer(String name, String badgeNumber) {
+    public PoliceOfficer(String name, String badgeNumber) {
         this.name = name;
         this.badgeNumber = badgeNumber;
     }
