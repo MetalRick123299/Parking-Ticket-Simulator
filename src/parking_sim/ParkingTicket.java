@@ -41,7 +41,8 @@ public class ParkingTicket {
         this.fine = newFine;
     }
 
+    @Override
     public String toString() {
-        return "String";
+        return "Officer: " + officer + "\nCar: " + car + "\nFine:" + fine;
     }
 }

@@ -19,7 +19,8 @@ public class ParkingMeter {
         this.minutesPurchased = newMinutesPurchased;
     }
 
+    @Override
     public String toString() {
-        return "String";
+        return "Minutes Purchased: " + minutesPurchased;
     }
 }

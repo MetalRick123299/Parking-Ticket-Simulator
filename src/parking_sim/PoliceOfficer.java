@@ -40,7 +40,8 @@ public class PoliceOfficer {
         return car.getMinutesParked() > meter.getMinutesPurchased();
     }
 
+    @Override
     public String toString() {
-        return "String";
+        return "Officer Name: " + name + "\n" + "Badge Number: " + badgeNumber;
     }
 }

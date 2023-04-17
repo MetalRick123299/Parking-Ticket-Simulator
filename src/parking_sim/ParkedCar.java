@@ -63,7 +63,9 @@ public class ParkedCar {
         this.minutesParked = newMinutesParked;
     }
 
+    @Override
     public String toString() {
-        return "String";
+        return "Make: " + make + "\nModel: " + model + "\nColor: " + "License number: " + licenseNumber
+                + "\nMinutes parked: " + minutesParked;
     }
 }
