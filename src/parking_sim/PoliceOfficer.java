@@ -42,6 +42,7 @@ public class PoliceOfficer {
 
     @Override
     public String toString() {
-        return "Officer Name: " + name + "\n" + "Badge Number: " + badgeNumber;
+        return "Police Officer: \n\t" + "Officer Name: " + name + "\n\t" + "Badge Number: " + badgeNumber
+                + "\n\t";
     }
 }
