@@ -30,9 +30,13 @@ public class PoliceOfficer {
         this.badgeNumber = newBadgeNumber;
     }
 
+    // which is $25 for the first hour or part of an hour that the car is illegally
+    // parked,
+    // plus $10 for every additional hour or part of an hour that the car is
+    // illegally parked.
     public ParkingTicket writeParkingTicket(ParkingMeter meter, ParkedCar car) {
-        final int minutesOver = car.getMinutesParked() - meter.getMinutesPurchased();
-        final double fine = 100.00 + (Math.max(minutesOver, 0) * 0.10);
+        final int hoursOver = (car.getMinutesParked() - meter.getMinutesPurchased()) / 60;
+        final int fine = 25 + (10 * hoursOver);
         return new ParkingTicket(this, car, fine);
     }
 
