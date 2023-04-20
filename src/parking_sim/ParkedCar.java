@@ -65,8 +65,8 @@ public class ParkedCar {
 
     @Override
     public String toString() {
-        return "Parked Car:" + "\n\tMake: " + make + "\n\tModel: " + model + "\n\tColor: " + "License number: "
+        return "Parked Car:" + " Model:" + model + " Make:" + make + " Color:" + color + " License-Number:"
                 + licenseNumber
-                + "\n\tMinutes parked: " + minutesParked + "\n";
+                + " Minutes-Parked:" + minutesParked;
     }
 }

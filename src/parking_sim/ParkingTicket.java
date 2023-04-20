@@ -43,6 +43,7 @@ public class ParkingTicket {
 
     @Override
     public String toString() {
-        return "Parking Ticket:" + "\n    " + officer + "" + car + "\n    " + "Fine: " + fine + "\n";
+        return "Parking Ticket:\n  " + officer + "\n  " + car + "\n  " + "Fine: $"
+                + String.format("%.02f", fine);
     }
 }
